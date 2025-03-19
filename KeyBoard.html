@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Keydown Event</title>
+</head>
+<body>
+  <input type="text" id="inputBox" placeholder="글자를 입력하십시요" />
+  <div id="logArea"></div>
+
+  <script>
+    const inputBox = document.getElementById("inputBox");
+    const logArea = document.getElementById("logArea");
+
+    inputBox.addEventListener("keydown", (event) => {
+      logArea.textContent = `누른 키: ${event.key}`;
+    });
+  </script>
+</body>
+</html>

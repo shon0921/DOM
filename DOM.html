@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Example</title>
+</head>
+<body>
+    <div id="content">원래 내용</div>
+    <button id="changeBtn">내용 바꾸기</button>
+
+    <script>
+        const btn = document.getElementById("changeBtn");
+        const contentDiv = document.getElementById("content");
+
+        btn.addEventListener("click", () => {
+            contentDiv.innerText = "새로운 내용!";
+        });
+    </script>
+
+</body>
+</html>
